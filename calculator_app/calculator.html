@@ -1,23 +1,54 @@
 <html>
   <head>
     <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
     <style>
+      body {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #ede7da;
+        flex-direction: column;
+      }
+
       .button {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 1000;
         width: 80px;
-        height: 40px;
-        background-color: #6969b3;
+        height: 43px;
+        background-color: #e5c067;
         border: 0px;
-        color: #ffffffca;
+        color: #f3ede1;
         border-radius: 6px;
-        box-shadow: 3px 5px 5px black;
+        box-shadow: 1px 5px 5px grey;
+        outline: 0.5px solid #5C3D56;
+        margin-bottom: 8px;
       }
 
       button:hover {
-        background-color: #98c1d9;
+        background-color: #521c14e3;
       }
 
       button:active {
         box-shadow: 2px 4px 4px black;
+      }
+
+      .operator {
+        background-color: #b5cae2; 
+      }
+
+      .operator:hover {
+        background-color: #5A8A82;
+      }
+
+      .parenthesis {
+        background-color: #d49a56; 
+      }
+
+      .parenthesis:hover {
+        background-color: #2A3D66;
       }
 
       .flexContainer {
@@ -31,6 +62,9 @@
       }
 
       .displayContainer {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color: #D94F4F;
         display: flex;
         justify-content: flex-end;
         width: 390px;
@@ -38,39 +72,49 @@
 
       #display {
         margin-right: 20px;
+        margin-bottom: 20px;
+        width: 325px;
+        text-align: right;
+        padding: 10px;
+        background-color: #ece9e2;
+        border: 1.5px solid #7f9e67;
+        border-radius: 6px;
+        box-shadow: 1px 3px 3px #F2C94C;
       }
     </style>
   </head>
 
   <body>
-    <h1>Calculator</h1>
-    <div class="displayContainer">
-      <span id="display"></span>
-    </div>
+    <h1>calculator</h1>
+    <div class="calculator">
+      <div class="displayContainer">
+        <span id="display"></span>
+      </div>
 
-    <div class="flexContainer">
-      <button class="button number">7</button>
-      <button class="button number">8</button>
-      <button class="button number">9</button>
-      <button class="button operator">/</button>
+      <div class="flexContainer">
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button class="button operator">/</button>
 
-      <button class="button number">4</button>
-      <button class="button number">5</button>
-      <button class="button number">6</button>
-      <button class="button operator">*</button>
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button operator">*</button>
 
-      <button class="button number">1</button>
-      <button class="button number">2</button>
-      <button class="button number">3</button>
-      <button class="button operator">-</button>
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button operator">-</button>
 
-      <button class="button number">0</button>
-      <button class="button decimal">.</button>
-      <button class="button equals">=</button>
-      <button class="button operator">+</button>
+        <button class="button number">0</button>
+        <button class="button decimal">.</button>
+        <button class="button equals">=</button>
+        <button class="button operator">+</button>
 
-      <button class="button parenthesis">(</button>
-      <button class="button parenthesis">)</button>
+        <button class="button parenthesis">(</button>
+        <button class="button parenthesis">)</button>
+      </div>
     </div>
 
     <script>

@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    color: #5C3D56;
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.calculator {
+    width: 420px;
+    background-color: #ede7da; 
+    border-radius: 15px; 
+    padding: 20px;
+    border: 5px solid #e5c067; 
+    outline: 2.5px solid #d49956dd;
+}

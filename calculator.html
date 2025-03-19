@@ -3,86 +3,6 @@
     <title>Calculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="calculator.css">
-    <style>
-      body {
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #ede7da;
-        flex-direction: column;
-      }
-
-      .button {
-        font-family: 'Nunito', sans-serif;
-        font-size: 13px;
-        font-weight: 1000;
-        width: 80px;
-        height: 40px;
-        background-color: #e5c067;
-        border: 0px;
-        color: #f3ede1;
-        border-radius: 6px;
-        box-shadow: 1px 5px 5px grey;
-        outline: 0.5px solid #5C3D56;
-        margin-bottom: 8px;
-      }
-
-      button:hover {
-        background-color: #521c14e3;
-      }
-
-      button:active {
-        box-shadow: 2px 4px 4px black;
-      }
-
-      .operator {
-        background-color: #b5cae2; 
-      }
-
-      .operator:hover {
-        background-color: #5A8A82;
-      }
-
-      .parenthesis {
-        background-color: #d49a56; 
-      }
-
-      .parenthesis:hover {
-        background-color: #2A3D66;
-      }
-
-      .flexContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: baseline;
-        width: 390px;
-        row-gap: 8px;
-      }
-
-      .displayContainer {
-        font-family: 'Nunito', sans-serif;
-        font-weight: 600;
-        color: #D94F4F;
-        display: flex;
-        justify-content: flex-end;
-        width: 390px;
-      }
-
-      #display {
-        margin-right: 20px;
-        margin-bottom: 20px;
-        width: 325px;
-        text-align: right;
-        padding: 10px;
-        background-color: #ece9e2;
-        border: 2px solid #7f9e67;
-        border-radius: 6px;
-        box-shadow: 1px 3px 3px #F2C94C;
-      }
-    </style>
   </head>
 
   <body>
@@ -115,6 +35,7 @@
 
         <button class="button parenthesis">(</button>
         <button class="button parenthesis">)</button>
+        <button class="button clear">AC</button>
       </div>
     </div>
 

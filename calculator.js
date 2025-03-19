@@ -95,7 +95,7 @@ function parenthesisMultip() {
     data.displayString = data.displayString.replace(/\)(\()/g, ') * ('); 
 }
 
-function calculateResult() {
+function calculate() {
     parenthesisMultip();
     try {
         data.displayString = eval(data.displayString).toString();
@@ -105,7 +105,7 @@ function calculateResult() {
     data.updateDisplay();
 }
 
-document.querySelector(".equals").addEventListener("click", calculateResult);
+document.querySelector(".equals").addEventListener("click", calculate);
 
 // const numberButtons = document.querySelectorAll(".number_button");
 // const data = {

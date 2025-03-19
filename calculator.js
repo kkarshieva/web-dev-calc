@@ -89,7 +89,14 @@ clearButton.addEventListener("click", () => {
     data.updateDisplay();
 });
 
+function parenthesisMultip() {
+    data.displayString = data.displayString.replace(/(\d)(\()/g, '$1 * ('); 
+    data.displayString = data.displayString.replace(/\)(\d)/g, ') * $1'); 
+    data.displayString = data.displayString.replace(/\)(\()/g, ') * ('); 
+}
+
 function calculateResult() {
+    parenthesisMultip();
     try {
         data.displayString = eval(data.displayString).toString();
     } catch (error) {

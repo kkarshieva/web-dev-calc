@@ -7,10 +7,10 @@ h1 {
 }
 
 .calculator {
-    width: 420px;
+    width: 390px;
     background-color: #ede7da; 
-    border-radius: 15px; 
+    border-radius: 20px; 
     padding: 20px;
-    border: 5px solid #e5c067; 
-    outline: 2.5px solid #d49956dd;
+    border: 8px solid #e5c067; 
+    outline: 3.5px solid #d49956dd;
 }

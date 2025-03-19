@@ -50,7 +50,7 @@ button:active {
 }
 
 .clear:hover {
-    background-color: #D98B8B; 
+    background-color: #B22F2F; 
 }
 
 .flexContainer {
@@ -97,6 +97,6 @@ h1 {
     background-color: #ede7da; 
     border-radius: 20px; 
     padding: 20px;
-    border: 8px solid #e5c067; 
-    outline: 3.5px solid #d49956dd;
+    border: 8px solid #5A8A82; 
+    outline: 3.5px solid #2A3D66;
 }
